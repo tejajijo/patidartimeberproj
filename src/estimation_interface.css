@@ -1,0 +1,144 @@
+.table1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.mainHeader{
+    text-align: center;
+    color: red;
+}
+.subHeader{
+    text-align: center;
+}
+.table2{
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    font-size: large;
+    table-layout: fixed;
+}
+.table2 tr{
+    border-right: 1px solid black ;
+    border-bottom: 1px solid black ;
+}
+.head{
+    border-right: 1px solid black ;
+    border-bottom: 1px solid black ;
+}
+.button{
+    margin-right: 10px;
+    cursor: pointer;
+}
+input[type=number]{
+    text-align: right;
+    color: blue;
+    width:95%;
+    height:25px;
+    border-right:2px solid black;
+}
+
+.finalValues{
+    margin-left: auto;
+}
+.vat{
+    width: 113px;
+    border: none;
+    background-color: whitesmoke;
+    color: blue;
+    text-align: right;
+}
+
+.row{
+    display: flex;
+    height: 31%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.column{
+    width: 35%;
+    text-align: center;
+}
+
+.subColumn1{
+    height: 45%;
+}
+.panel{
+   float: right;
+   margin-right: 16px;
+   cursor: pointer;
+}
+i{
+    padding: 5px;
+}
+button{
+    border: none;
+    padding: 8px;
+    background-color: gainsboro;
+    cursor: pointer;
+}
+.inline-button{
+    padding: 4px;
+}
+
+.table-button{
+    margin-left: 32px;
+}
+.data-table{
+    width: 100%;
+    height: 250px;
+    overflow: auto;
+    border: 1;
+}
+.data{
+    overflow-y: scroll;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+    margin: auto;
+    padding: 2rem;
+}
+body::before{
+    opacity: .6;
+}
+.button-panel-column{
+    width: 50%;
+}
+.button-panel-row{
+    height: 50px;
+    display: flex;
+    padding: 4px;
+}
+
+.data-table th{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.estimation-interface{
+    background:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('images/icon.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+body{
+    background-color: beige;
+}
+.initial-panel th{
+    font-size: large;
+}
+
+.row-header{
+    display: flex;
+}
+  
+.column-header{
+    width: 50%;
+    height: auto;
+}
+
+img{
+    width: 17%;
+}

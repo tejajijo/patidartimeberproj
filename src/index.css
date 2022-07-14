@@ -1,0 +1,56 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+  Arial, sans-serif;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+.row-index{
+  display: flex;
+  padding: 30px;
+  margin: 40px;
+}
+
+.column-index{
+  width: 50%;
+  height: auto;
+  padding: 50px;
+}
+
+img{
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 90%;
+}
+
+.login-frame{
+  text-align: center;
+  padding: 15px;
+  margin-top: 10%;
+}
+
+.table {
+  margin: 0 auto; 
+}
+
+.table th,td{
+  padding: 3%;
+}
+
+input[type=submit]{
+  width: 144%;
+  border: none;
+  height: 30px;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.table input[type=text], input[type=password]{
+  height: 24px;
+  width: 139%;
+}
+
+.table th{
+  width: 37%;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Patidar Timber Estimation App</title>
+        <link rel="stylesheet" type="text/css" href="estimation_interface.css">
+        
+        <link rel="icon" href="images/icon2.jpg" type="image/x-icon">
+
+        <!-- Bootstrap Font Icon CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+              integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+              crossorigin="anonymous">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA_Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+
+    <body>
+        <div class="estimation-interface">
+            <!-- main Headers -->
+           <div class="row-header">
+
+                <div class="column header">
+                    <img src="images/icon2.jpg" alt="logo" style="float: left;">
+                </div>
+
+                <div class="column header">
+                    <h1 class="mainHeader">PATIDAR TIMBERS</h1>
+                </div>
+
+                <div class="column header">
+                    <img src="images/icon2.jpg" alt="logo" style="float: right;">
+                </div>
+
+           </div>
+            <h3 class="subHeader">ESTIMATION</h3>
+        
+            <div class="initial-panel">
+                <table class="table1">
+                    <tr>
+                        <th>Sl no</th>
+                        <td><input type="text" style="width: 50px;height: 18px;"></td>
+                        <td><input type="text" style="width: 50px;height: 18px;"></td>
+                        <th>Date</th>
+                        <td><input type="date" style="width: 100%;height: 18px;"></td>
+                        <th>Name</th>
+                        <td><input type="text" style="width: 100%;height: 18px;color: brown;"></td>
+                        <th>Address</th>
+                        <td><input type="text" style="width: 100%;height: 18px;"></td>
+                        <td><input type="checkbox" style="margin-left: 43%;
+                            height: 23px;
+                            width: 100%;"></td>
+                    </tr>
+                </table>
+            </div>
+        
+            <!-- Button Panel to add,edit, save etc-->
+            <div class="button-panel-row">
+
+
+                <div class="button-panel-column">
+                    <!-- buttons to add and cancel rows -->
+                    <div class="table-button">
+                        <button onclick="createRow()" class="inline-button"><i class='fas fa-plus'></i></button>
+                        <script src="estimation_interface.js"></script>
+                        <button onclick="deleteRow()" class="inline-button"><i class='fas fa-window-close'></i></button>
+                    </div>
+                </div>
+
+
+                <div class="button-panel-column">
+                    <div class="panel">
+                        <button onclick="tableRefresh()"><i class="fas fa-file-alt"></i>New</button>
+                        <button><i class='fas fa-edit'></i>Edit</button>
+                        <button><i class='fas fa-save'></i>Save</button>
+                        <button><i class='fas fa-trash'></i>Delete</button>
+                        <button><i class='fas fa-vector-square'></i>Report</button>
+                        <button><i class='fas fa-window-close'></i>Exit</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table to add values -->
+
+            <!-- main table to add details -->
+            <div class="data-table">  
+                <table class="table2" id="dataTable">
+                    <!-- <div class="data"> -->
+                        <tr>
+                            <th class="head" style="width:50px;">No.</th>    
+                            <th class="head">Wood</th>
+                            <th class="head">Breadth</th>
+                            <th class="head">Width</th>
+                            <th class="head">Length</th>
+                            <th class="head">Numbers</th>
+                            <th class="head">Rate</th>
+                            <th class="head">Below 6 CFT</th>
+                            <th class="head">Above 5 CFT</th>
+                        </tr>
+                    <!-- </div> -->
+                </table>
+            </div>
+             
+            <!-- Down div showing estimation, bill copy etc selections and calculationg amount -->
+            <div>
+                <hr>
+                <div class="row">
+                    <div class="column">               
+                        <div class="subColumn1">
+                            Estimation
+                            <input type="radio" name="" id="">
+                        </div>
+                        <div class="subColumn">
+                            Delivery
+                            <input type="radio" style="margin-left: 5%;" name="" id="">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="subColumn1">
+                            Bill Copy
+                            <input type="radio" name="" id="">
+                        </div>
+                        <div class="subColumn" >
+                            Sizes
+                            <input type="radio" style="margin-left: 7%;" name="" id="">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <table class="finalValues">
+                            <tr>
+                                <th>CFT TOTAL</th>
+                                <td><input type="text" style="color: green;"></td>
+                                <td><input type="text" style="color: green;"></td>
+                            </tr>
+                            <tr>
+                                <th>CFT VALUE</th>
+                                <td><input type="text" style="color: blue;"></td>
+                                <td><input type="text" style="color: blue;"></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td><b>SUB TOTAL</b></td>
+                                <td><input type="text" style="color: green;"></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td><b>VAT @</b>
+                                    <input type="text" class="vat"> </td>
+                                <td><input type="text" style="color: orange;" readonly></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td><b>OTHER AMOUNT</b></td>
+                                <td><input type="text" style="color: green;"></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td><b>GSTIN</b></td>
+                                <td><input type="text" style="color: blue;"></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td><b>NET TOTAL</b></td>
+                                <td><input type="text" style="color: green;"></td>
+                            </tr>                   
+                        </table>
+                    </div>         
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    
+    </body>
+</html>
