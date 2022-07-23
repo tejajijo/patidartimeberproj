@@ -1,7 +1,7 @@
 .table1{
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
 }
 .mainHeader{
     text-align: center;
@@ -40,6 +40,9 @@ input[type=number]{
 
 .finalValues{
     margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
 }
 .vat{
     width: 113px;
@@ -51,14 +54,17 @@ input[type=number]{
 
 .row{
     display: flex;
-    height: 31%;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    height: auto;
+    width: 100%;
+    padding: 10px;
 }
 .column{
-    width: 35%;
+    width: 25%;
     text-align: center;
+}
+
+.column1{
+    width: 50%;
 }
 
 .subColumn1{
@@ -105,12 +111,18 @@ body::before{
     opacity: .6;
 }
 .button-panel-column{
-    width: 50%;
+    min-width: 20%;
+}
+
+.button-panel-column1{
+    min-width: 80%;
 }
 .button-panel-row{
     height: 50px;
     display: flex;
     padding: 4px;
+    width: auto;
+    height: auto;
 }
 
 .data-table th{
@@ -119,7 +131,7 @@ body::before{
     background-color: white;
 }
 .estimation-interface{
-    background:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('images/icon.png');
+    background:linear-gradient(rgba(253,253,253,.7), rgba(253,253,253,.8)), url('images/icon2.jpg');
     background-repeat: no-repeat;
     background-position: 50%;
 }
@@ -141,4 +153,31 @@ body{
 
 img{
     width: 17%;
+}
+
+.sequence{
+    text-align: center;
+    width: -webkit-fill-available;
+    height: 25px;
+    border: 2px solid black;
+}
+
+.checkbox{
+    display: flex;
+    margin: auto;
+}
+
+.table-data{
+    border: 2px solid black;
+    background-color: white;
+}
+
+input{
+    font-size: medium;
+}
+
+.data-input{
+    width:95%;
+    height:25px;
+    border-right:2px solid black
 }

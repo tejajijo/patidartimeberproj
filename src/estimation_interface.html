@@ -13,7 +13,7 @@
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA_Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -21,15 +21,15 @@
             <!-- main Headers -->
            <div class="row-header">
 
-                <div class="column header">
+                <div class="column-header">
                     <img src="images/icon2.jpg" alt="logo" style="float: left;">
                 </div>
 
-                <div class="column header">
+                <div class="column-header">
                     <h1 class="mainHeader">PATIDAR TIMBERS</h1>
                 </div>
 
-                <div class="column header">
+                <div class="column-header">
                     <img src="images/icon2.jpg" alt="logo" style="float: right;">
                 </div>
 
@@ -62,19 +62,18 @@
                 <div class="button-panel-column">
                     <!-- buttons to add and cancel rows -->
                     <div class="table-button">
-                        <button onclick="createRow()" class="inline-button"><i class='fas fa-plus'></i></button>
+                        <button id="add-rows" class="inline-button"><i class='fas fa-plus'></i></button>
                         <script src="estimation_interface.js"></script>
                         <button onclick="deleteRow()" class="inline-button"><i class='fas fa-window-close'></i></button>
                     </div>
                 </div>
 
-
-                <div class="button-panel-column">
+<!-- button panel to refresh table and other features like edit save delete and create report and exit -->
+                <div class="button-panel-column1">
                     <div class="panel">
                         <button onclick="tableRefresh()"><i class="fas fa-file-alt"></i>New</button>
-                        <button><i class='fas fa-edit'></i>Edit</button>
                         <button><i class='fas fa-save'></i>Save</button>
-                        <button><i class='fas fa-trash'></i>Delete</button>
+                        <!-- <button><i class='fas fa-trash'></i>Delete</button> -->
                         <button><i class='fas fa-vector-square'></i>Report</button>
                         <button><i class='fas fa-window-close'></i>Exit</button>
                     </div>
@@ -83,12 +82,12 @@
 
             <!-- Table to add values -->
 
-            <!-- main table to add details -->
+            <!-- main table to add details (data table)-->
             <div class="data-table">  
                 <table class="table2" id="dataTable">
                     <!-- <div class="data"> -->
                         <tr>
-                            <th class="head" style="width:50px;">No.</th>    
+                            <th class="head" style="width:50px;">No.</th>   
                             <th class="head">Wood</th>
                             <th class="head">Breadth</th>
                             <th class="head">Width</th>
@@ -126,7 +125,7 @@
                             <input type="radio" style="margin-left: 7%;" name="" id="">
                         </div>
                     </div>
-                    <div class="column">
+                    <div class="column1">
                         <table class="finalValues">
                             <tr>
                                 <th>CFT TOTAL</th>
